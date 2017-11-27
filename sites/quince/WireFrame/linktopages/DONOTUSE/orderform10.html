@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Book an Event</title>
+    <a href="../index_wk5.html">HOME</a>
+    <a href="catering.html">CATERING</a>
+  </head>
+
+<body>
+  <h1>Lets book an event</h1>
+  <h2>Fill out the form below and click "plan now" to order</h2>
+  <form action="my-form.php" method="post">
+		  <p>Choose your menu:
+        <select name="Menu Theme">
+          <option value="Classic Selection">Classic Selection</option>
+          <option value="TexMex">TexMex</option>
+          <option value="Cajun">Cajun</option>
+          <option value="Italian">Italian</option>
+          <option value="French">French</option>
+        </select></p>
+
+  		<p><strong>Event Type:</strong></p>
+        <p><input type="radio" name="gathering" value="gathering">Gathering</p>
+        <p><input type="radio" name="buisness meeting" value="buisness meeting">Buisness Meeting</p>
+        <p><input type="radio" name="wedding" value="wedding">Wedding</p>
+        <p><input type="radio" name="holiday" value="holiday">Holiday</p>
+
+  		<p><strong>Number of guests:</strong></p>
+        <p><input type="number" name="guests" min="10" max="1000"></p>
+
+      <p><strong>Date of Event:</strong></p>
+        <p><input type="date" name="date"></p>
+
+      <p><strong>Tasting Needed:</strong></p>
+        <p><input type="checkbox" name="extras[]" value="taste">Tasting Consultation</p>
+
+  		<p><strong>Event Location:</strong></p>
+        <p>Name:<input type="text" name="name" value=""></p>
+        <p>Address:<input type="text" name="address" value=""></p>
+        <p>City:<input type="text" name="city" value=""></p>
+        <p>State:<input type="text" name="state" value=""></p>
+        <p>Zip:<input type="text" name="zip" value=""></p>
+        <p>Phone:<input type="tel" name="phone" value=""></p>
+
+      <p>Customer Comments:</p>
+        <p><textarea name="comments"></textarea></p>
+
+      <p>Extras:</p>
+        <p><input type="checkbox" name="extras[]" value="china">china</p>
+        <p><input type="checkbox" name="extras[]" value="alcohol">bar tender</p>
+        <p><input type="checkbox" name="extras[]" value="cake">cake</p>
+        <p><input type="checkbox" name="extras[]" value="linens">linens</p>
+
+      <p><input type="submit" value="Plan Now"></p>
+  </form>
+</body>
+</html>
