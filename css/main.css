@@ -100,9 +100,6 @@ background: #ffffff;
 		}
 
 	a {
-		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #585858;
@@ -299,8 +296,6 @@ position: relative;
 }
 
 .icon:before {
--moz-osx-font-smoothing: grayscale;
--webkit-font-smoothing: antialiased;
 font-family: FontAwesome;
 font-style: normal;
 font-weight: normal;
@@ -312,9 +307,6 @@ display: none;
 }
 
 .icon.style2 {
--moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
--webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
--ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 background-color: transparent;
 border: solid 1px #c9c9c9;
@@ -599,22 +591,13 @@ width: 100%;
 /* Tiles */
 
 .tiles {
-display: -moz-flex;
-display: -webkit-flex;
-display: -ms-flex;
 display: flex;
--moz-flex-wrap: wrap;
--webkit-flex-wrap: wrap;
--ms-flex-wrap: wrap;
 flex-wrap: wrap;
 postiion: relative;
 margin: -2.5em 0 0 -2.5em;
 }
 
 .tiles article {
--moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
--webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
--ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 transition: transform 0.5s ease, opacity 0.5s ease;
 position: relative;
 width: calc(33.33333% - 2.5em);
@@ -622,9 +605,6 @@ margin: 2.5em 0 0 2.5em;
 }
 
 .tiles article > .image {
--moz-transition: -moz-transform 0.5s ease;
--webkit-transition: -webkit-transform 0.5s ease;
--ms-transition: -ms-transform 0.5s ease;
 transition: transform 0.5s ease;
 position: relative;
 display: block;
@@ -639,13 +619,7 @@ width: 100%;
 }
 
 .tiles article > .image:before {
--moz-pointer-events: none;
--webkit-pointer-events: none;
--ms-pointer-events: none;
 pointer-events: none;
--moz-transition: background-color 0.5s ease, opacity 0.5s ease;
--webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
--ms-transition: background-color 0.5s ease, opacity 0.5s ease;
 transition: background-color 0.5s ease, opacity 0.5s ease;
 content: '';
 display: block;
@@ -660,25 +634,10 @@ opacity: 0.8;
 }
 
 .tiles article > a {
-display: -moz-flex;
-display: -webkit-flex;
-display: -ms-flex;
 display: flex;
--moz-flex-direction: column;
--webkit-flex-direction: column;
--ms-flex-direction: column;
 flex-direction: column;
--moz-align-items: center;
--webkit-align-items: center;
--ms-align-items: center;
 align-items: center;
--moz-justify-content: center;
--webkit-justify-content: center;
--ms-justify-content: center;
 justify-content: center;
--moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
--webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
--ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
 transition: background-color 0.5s ease, transform 0.5s ease;
 position: absolute;
 top: 0;
@@ -707,9 +666,6 @@ margin: 0;
 }
 
 .tiles article > a .content {
--moz-transition: max-height 0.5s ease, opacity 0.5s ease;
--webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
--ms-transition: max-height 0.5s ease, opacity 0.5s ease;
 transition: max-height 0.5s ease, opacity 0.5s ease;
 width: 100%;
 max-height: 0;
@@ -723,63 +679,33 @@ opacity: 0;
 }
 
 .tiles article.style1 > .image:before {
-background-color: #7ecaf6;
+background-color: deepskyblue;
 }
 
 .tiles article.style2 > .image:before {
-background-color: #7ecaf6;
+background-color: deepskyblue;
 }
 
 .tiles article.style3 > .image:before {
-background-color: #7ecaf6;
+background-color: deepskyblue;
 }
 
 .tiles article.style4 > .image:before {
-background-color: #7ecaf6;
+background-color: deepskyblue;
 }
 
 .tiles article.style5 > .image:before {
-background-color: #7ecaf6;
+background-color: deepskyblue;
 }
 
 .tiles article.style6 > .image:before {
-background-color: #7ecaf6;
+background-color: deepskyblue;
 }
-
-/*.tiles article.style1 > .image:before {
-background-color: #f2849e;
-}
-
-.tiles article.style2 > .image:before {
-background-color: #7ecaf6;
-}
-
-.tiles article.style3 > .image:before {
-background-color: #7bd0c1;
-}
-
-.tiles article.style4 > .image:before {
-background-color: #c75b9b;
-}
-
-.tiles article.style5 > .image:before {
-background-color: #ae85ca;
-}
-
-.tiles article.style6 > .image:before {
-background-color: #8499e7;
-}
-*/
-
-
-
 
 
 
 body:not(.is-touch) .tiles article:hover > .image {
--moz-transform: scale(1.1);
--webkit-transform: scale(1.1);
--ms-transform: scale(1.1);
+
 transform: scale(1.1);
 }
 
@@ -802,9 +728,6 @@ margin-top: 2em;
 }
 
 body.is-loading .tiles article {
--moz-transform: scale(0.9);
--webkit-transform: scale(0.9);
--ms-transform: scale(0.9);
 transform: scale(0.9);
 opacity: 0;
 }
@@ -852,9 +775,6 @@ margin: 2.5em 0 0 2.5em;
     }
 
     .tiles article:hover > .image {
-    -moz-transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-    -ms-transform: scale(1.0);
     transform: scale(1.0);
     }
 
@@ -914,13 +834,7 @@ z-index: 10000;
 }
 
 #header nav ul {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
     list-style: none;
     margin: 0;
@@ -958,9 +872,6 @@ z-index: 10000;
 }
 
 #header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
-    -moz-transition: opacity 0.2s ease;
-    -webkit-transition: opacity 0.2s ease;
-    -ms-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease;
     content: '';
     display: block;
@@ -974,15 +885,6 @@ z-index: 10000;
     background-size: 2em 2em;
 }
 
-#header nav ul li a[href="#menu"]:before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
-    opacity: 0;
-}
-
-#header nav ul li a[href="#menu"]:after {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
-    opacity: 1;
-}
 
 #header nav ul li a[href="#menu"]:hover:before {
     opacity: 1;
@@ -1033,17 +935,8 @@ background-color: #f6f6f6;
 }
 
 #footer > .inner {
-display: -moz-flex;
-display: -webkit-flex;
-display: -ms-flex;
 display: flex;
--moz-flex-wrap: wrap;
--webkit-flex-wrap: wrap;
--ms-flex-wrap: wrap;
 flex-wrap: wrap;
--moz-flex-direction: row;
--webkit-flex-direction: row;
--ms-flex-direction: row;
 flex-direction: row;
 }
 
@@ -1140,9 +1033,6 @@ margin: 3em 0 0 0;
 }
 
 #footer > .inner section:nth-child(2) {
--moz-order: -1;
--webkit-order: -1;
--ms-order: -1;
 order: -1;
 width: 100%;
 margin-left: 0;
