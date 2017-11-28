@@ -111,7 +111,7 @@ background: #ffffff;
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color:darkturquoise !important;
 		}
 
 	strong, b {
@@ -333,7 +333,7 @@ font-size: 1.1em;
 
 .icon.style2:hover {
 color: #f2849e;
-border-color: #f2849e;
+border-color:darkturquoise;
 }
 
 .icon.style2:active {
@@ -723,6 +723,30 @@ opacity: 0;
 }
 
 .tiles article.style1 > .image:before {
+background-color: #7ecaf6;
+}
+
+.tiles article.style2 > .image:before {
+background-color: #7ecaf6;
+}
+
+.tiles article.style3 > .image:before {
+background-color: #7ecaf6;
+}
+
+.tiles article.style4 > .image:before {
+background-color: #7ecaf6;
+}
+
+.tiles article.style5 > .image:before {
+background-color: #7ecaf6;
+}
+
+.tiles article.style6 > .image:before {
+background-color: #7ecaf6;
+}
+
+/*.tiles article.style1 > .image:before {
 background-color: #f2849e;
 }
 
@@ -745,6 +769,12 @@ background-color: #ae85ca;
 .tiles article.style6 > .image:before {
 background-color: #8499e7;
 }
+*/
+
+
+
+
+
 
 body:not(.is-touch) .tiles article:hover > .image {
 -moz-transform: scale(1.1);
