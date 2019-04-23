@@ -1,14 +1,6 @@
 
 (function($) {
 
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)'
-	});
-
 	$(function() {
 
 		var	$window = $(window),
@@ -23,9 +15,7 @@
 				}, 100);
 			});
 
-		// Touch?
-			if (skel.vars.mobile)
-				$body.addClass('is-touch');
+
 
 		// Forms.
 			var $form = $('form');
@@ -77,25 +67,10 @@
 						})
 						.triggerHandler('--init');
 
-					// Fix.
-						if (skel.vars.browser == 'ie'
-						||	skel.vars.mobile)
-							$this
-								.css('max-height', '10em')
-								.css('overflow-y', 'auto');
-
 				});
 
 			// Fix: Placeholder polyfill.
 				$form.placeholder();
-
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
 
 		// Menu.
 			var $menu = $('#menu');
